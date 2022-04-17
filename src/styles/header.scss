@@ -1,0 +1,30 @@
+.main-header {
+  background-color: var(--color-light);
+  border-bottom: 2px solid var(--color-gray-border);
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  &__content {
+    display: grid;
+    grid-template-columns: 30px 60px auto;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__logo {
+    padding: 0.5rem 0;
+  }
+
+  &__menu-btn {
+    svg {
+      height: 24px;
+      width: 24px;
+      color: rgb(115, 122, 142);
+      stroke-width: 1px;
+    }
+  }
+}

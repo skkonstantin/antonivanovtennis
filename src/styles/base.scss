@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --color-dark: #000;
+  --color-light: #fff;
+  --color-bg: #f0f0f0;
+  --color-text-dark: #222;
+  --color-gray-border: lightgray;
+}
+
+svg,
+picture,
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100vw;
+  color: var(--color-text-dark);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

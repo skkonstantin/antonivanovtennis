@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Школа тенниса Антона Иванова</title>
+    <link href="styles.min.css" rel="stylesheet" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__content content">
+        <button
+          class="main-header__menu-btn btn btn--container"
+          data-js="sm-navigation-show"
+        >
+          <svg>
+            <use xlink:href="images/icons.svg#menu"></use>
+          </svg>
+        </button>
+
+        <picture class="main-header__logo">
+          <source
+            type="image/webp"
+            srcset="
+              images/logo/logo-100.webp 100w,
+              images/logo/logo-200.webp 200w
+            "
+            sizes="(min-width: 576px) 200px, 100px"
+          />
+          <source
+            type="image/png"
+            srcset="
+              images/logo/logo-100.png 100w,
+              images/logo/logo-200.png 200w
+            "
+            sizes="(min-width: 576px) 200px, 100px"
+          />
+          <img src="images/logo/logo-200.png" />
+        </picture>
+
+        <div class="main-header__title">Школа тенниса <br />Антона Иванова</div>
+
+        <div class="sm-navigation hidden" data-js="sm-navigation">
+          <div class="sm-navigation__bg">
+            <div class="sm-navigation__inner-bg"></div>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/bg-4-576.webp 576w, images/bg-4-768.webp 768w"
+                sizes="(min-width: 576px) 768px, 576px"
+              />
+              <source
+                type="image/jpeg"
+                srcset="images/bg-4-576.jpg 576w, images/bg-4-768.jpg 768w"
+                sizes="(min-width: 576px) 768px, 576px"
+              />
+              <img />
+            </picture>
+          </div>
+
+          <button
+            class="sm-navigation__hide-btn btn btn--container"
+            data-js="sm-navigation-hide"
+          >
+            <svg>
+              <use xlink:href="images/icons.svg#close"></use>
+            </svg>
+          </button>
+
+          <picture class="sm-navigation__logo">
+            <source
+              type="image/webp"
+              srcset="
+                images/logo/logo-100.webp 100w,
+                images/logo/logo-200.webp 200w
+              "
+              sizes="200px"
+            />
+            <source
+              type="image/png"
+              srcset="
+                images/logo/logo-100.png 100w,
+                images/logo/logo-200.png 200w
+              "
+              sizes="200px"
+            />
+            <img />
+          </picture>
+
+          <nav class="sm-navigation__main-nav main-nav">
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#about">О школе</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#schedule">Расписание</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#price">Стоимость</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#map">Как нас найти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="links sm-navigation__links">
+            <li>
+              <a
+                href="https://t.me/+pII5qXtwCXg0MmI6"
+                target="_blank"
+                class="links__link"
+              >
+                <svg class="icon icon-tg">
+                  <use xlink:href="images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://vk.com/ivanovtennisschool"
+                target="_blank"
+                class="links__link"
+              >
+                <svg class="icon icon-vk">
+                  <use xlink:href="images/icons.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="sm-navigation__contacts contacts">
+            <li>
+              <a class="contacts__link" href="tel:+79772787376">
+                <svg class="contacts__icon">
+                  <use xlink:href="images/icons.svg#icon-phone"></use>
+                </svg>
+
+                <span class="contacts__title">Старший тренер</span>
+                <span class="contacts__data">+7(977)278-73-76</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="contacts__link" href="tel:+79162221257">
+                <svg class="contacts__icon contacts__icon--admin">
+                  <use xlink:href="images/icons.svg#icon-phone"></use>
+                </svg>
+                <span class="contacts__title">Администратор</span>
+                <span class="contacts__data">+7(916)222-12-57</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content" id="about">
+      <section class="advantages main-content__advantages">
+        <div class="content">
+          <div class="advantages__item advantage">
+            <svg class="advantage__icon">
+              <use xlink:href="images/icons.svg#children"></use>
+            </svg>
+            <h3 class="advantage__title">Групповые тренировки для детей</h3>
+            <div class="advantage__description">
+              Занятия проходят для детей от 4-15 лет по передовым программам
+              обучения. Проходят в игровой форме - ученики осваивают технику и
+              тактику тенниса через игру,минуя скучные монотонные заучивания.
+            </div>
+          </div>
+
+          <div class="advantages__item advantage">
+            <svg class="advantage__icon">
+              <use xlink:href="images/icons.svg#group"></use>
+            </svg>
+            <h3 class="advantage__title">Групповые тренировки для взрослых</h3>
+            <div class="advantage__description">
+              Групповые тренировки для взрослых любого возраста и уровня
+              подготовки. Занятия для взрослых проходят в игровой форме
+              адаптированной под данный возраст.
+            </div>
+          </div>
+
+          <div class="advantages__item advantage">
+            <svg class="advantage__icon">
+              <use xlink:href="images/icons.svg#individual"></use>
+            </svg>
+            <h3 class="advantage__title">Индивидуальные занятия</h3>
+            <div class="advantage__description">
+              Индивидуальные тренировки строятся с учетом уровня подготовки
+              игрока. Решаются задачи необходимые для прогресса занимающегося на
+              текущем этапе.
+            </div>
+          </div>
+
+          <div class="advantages__item advantage">
+            <svg class="advantage__icon">
+              <use xlink:href="images/icons.svg#prize"></use>
+            </svg>
+            <h3 class="advantage__title">Турниры выходного дня</h3>
+            <div class="advantage__description">
+              В целях популяризации вида спорта теннис школа регулярно проводит
+              турниры выходного дня. Это способствует развитию мотивации и
+              профессиональному росту наших учеников.
+            </div>
+          </div>
+
+          <div class="advantages__item advantage">
+            <svg class="advantage__icon">
+              <use xlink:href="images/icons.svg#sport-watch"></use>
+            </svg>
+            <h3 class="advantage__title">
+              Профессиональная спортивная подготовка
+            </h3>
+            <div class="advantage__description">
+              Кроме массового спорта, школа активно развивает профессиональный
+              спорт. Воспитанники получают возможность максимально раскрыть свой
+              потенциал, осваивая современную технику и тактику, успешно
+              выступая на турнирах Российского теннисного тура и турнирах серии
+              Tennis Europ и International Tennis Federation.
+            </div>
+          </div>
+
+          <div class="advantages__item advantage">
+            <svg class="advantage__icon">
+              <use xlink:href="images/icons.svg#bus"></use>
+            </svg>
+            <h3 class="advantage__title">Сборы и выезды на турниры</h3>
+            <div class="advantage__description">
+              В период каникул и праздников школа регулярно проводит выезды,
+              сборы и интенсивы с проживанием и усиленными тренировками. А так
+              же организуются выезды на турниры с сопровождением тренеров.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="main-content__text">
+        <div class="content">
+          <h1>Школа тенниса в Одинцово</h1>
+          <p>
+            Детская школа тенниса в Одинцово приглашает на занятия детей от 4 до
+            15 лет. В обучении мы используем современные, передовые
+            международные программы Tennis 10s, Quick start, "Оружие чемпиона",
+            которые поволяют осваивать этот прекрасный вид спорта через игру,
+            минуя скучное и монотонное заучивание и значительно сокращают
+            скорость обучения. Дети начинают играть в теннис уже на первом
+            занятии. Тренировки проходят леко и динамично.
+          </p>
+
+          <p>
+            Кроме того, значительно сокращается время обучения. Спустя несколько
+            месяцев тренировок наши ученики уже смогут участвовать в
+            соревнованиях.
+          </p>
+
+          <p>
+            Наши ученики осваивают современную технику и тактику, опираясь на
+            опыт лучших тренеров мира. Это позволяет занимать лидирующие позиции
+            в рейтинге Российского теннисного тура.
+          </p>
+
+          <p>
+            Воспитанники школы - победители и призеры турниров Российского
+            тенисного тура и ITF.
+          </p>
+
+          <p>Лучшие ученики:</p>
+
+          <ul style="list-style-position: inside">
+            <li>Паукова Диана - 11я ракетка России.</li>
+            <li>Плыгунова Виктория -218 ракетка России</li>
+            <li>Самохвалов Сергей - КМС по тенису</li>
+            <li>Журавлева Ангелина - МС , WTA 618</li>
+          </ul>
+
+          <p>
+            Активно работает школа тенниса для взрослых. Все групповые
+            тренировки проходят в игровом формате. Вы начнете играть уже на
+            первой тренировке. Параллельно изучая биомеханику техники и тактику
+            тенниса.
+          </p>
+
+          <p>
+            Для повышения мастерства игроков, мы регулярно проводим турниры
+            выходного дня для всех возрастов и уровней подготовки.
+          </p>
+
+          <p>Ждем вас на занятиях!</p>
+        </div>
+      </div>
+    </main>
+
+    <section class="schedule" id="schedule">
+      <div class="content">
+        <h2>Расписание</h2>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              images/schedule-576.webp   576w,
+              images/schedule-768.webp   768w,
+              images/schedule-992.webp   992w,
+              images/schedule-1200.webp 1200w
+            "
+            sizes="(min-width: 576px) 768px,(min-width: 768px) 992px, (min-width: 992px) 1200px, 576px"
+          />
+          <source
+            type="image/jpeg"
+            srcset="
+              images/schedule-576.jpg   576w,
+              images/schedule-768.jpg   768w,
+              images/schedule-992.jpg   992w,
+              images/schedule-1200.jpg 1200w
+            "
+            sizes="(min-width: 576px) 768px,(min-width: 768px) 992px, (min-width: 992px) 1200px, 576px"
+          />
+          <img
+            src="images/schedule-576.jpg"
+            data-ngsrc="images/schedule-1200.jpg"
+            data-nanogallery2-lightbox
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section class="price" id="price">
+      <div class="content">
+        <h2>Стоимость тренировок</h2>
+        <div class="price__items">
+          <picture>
+            <source srcset="images/price-1-576.webp" type="image/webp" />
+            <source srcset="images/price-1-576.jpg" type="image/jpeg" />
+            <img />
+          </picture>
+          <picture>
+            <source srcset="images/price-2-576.webp" type="image/webp" />
+            <source srcset="images/price-2-576.jpg" type="image/jpeg" />
+            <img />
+          </picture>
+          <picture>
+            <source srcset="images/price-3-576.webp" type="image/webp" />
+            <source srcset="images/price-3-576.jpg" type="image/jpeg" />
+            <img />
+          </picture>
+          <picture>
+            <source srcset="images/price-4-576.webp" type="image/webp" />
+            <source srcset="images/price-4-576.jpg" type="image/jpeg" />
+            <img />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="content">
+        <h2>Как найти школу</h2>
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6ed7aaedd068ee435b0d36a7e75aa4c98103d5441075d7498446396139c579e2&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
+        ></script>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="content main-footer__content">
+        <div class="main-footer__text">
+          Школа тенниса в Одинцово для детей и взрослых
+        </div>
+
+        <div class="main-footer__links">
+          <a href="https://t.me/+pII5qXtwCXg0MmI6" target="_blank">
+            <svg class="icon icon-tg">
+              <use xlink:href="images/icons.svg#icon-telegram"></use>
+            </svg>
+          </a>
+
+          <a href="https://vk.com/ivanovtennisschool" target="_blank">
+            <svg class="icon icon-vk">
+              <use xlink:href="images/icons.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

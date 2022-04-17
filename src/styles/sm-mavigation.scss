@@ -1,0 +1,140 @@
+.sm-navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s;
+  padding: 1rem;
+
+  background-color: #fff;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content min-content;
+
+  &.hidden {
+    transform: translate(-100%);
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    picture {
+      height: 100%;
+      width: 100%;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__inner-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__hide-btn {
+    grid-column-start: span 2;
+    justify-self: end;
+    align-self: start;
+
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  &__logo {
+  }
+
+  &__main-nav {
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__links {
+    grid-column-start: span 2;
+  }
+
+  &__contacts {
+    grid-column-start: span 2;
+  }
+
+  .links {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+
+    &__text {
+    }
+
+    &__link {
+      svg {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
+
+.main-nav {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__link {
+    color: var(--color-text-dark);
+  }
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  &__link {
+    color: var(--color-text-dark);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__data {
+    display: none;
+  }
+
+  &__icon {
+    height: 50px;
+    width: 50px;
+    animation: an1 0.5s infinite alternate;
+
+    &--admin {
+      animation: an1 0.5s infinite alternate-reverse;
+    }
+  }
+}
+
+@keyframes an1 {
+  100% {
+    transform: rotate(15deg);
+  }
+}
